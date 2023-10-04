@@ -1,76 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Orduña</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="shortcut icon" href="../img/orduna-icon.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>Orduña</title>
 </head>
+
 <body>
-    
-    <!--barra de navegacion: logo y menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  <nav class="navbar navbar-dark bg-dark sticky-sm-top o" aria-label="First navbar example">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#"><img src="../img/orduna-header.png" width="150px" height="75px"
+          alt="OrduñaIcon" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
+        aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+        <ul class="navbar-nav me-auto mb-2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+          </li>
+        </ul>
+      </div>
 
-    <!--cabezero: informacion principal-->
-    <header>
-        <div><h3>Hospedaje</h3></div>
-        <div><h3>Lugares</h3></div>
-        <div><h3>Recuerdos</h3></div>
-    </header>
-    
-    <!--contendio de la paigina-->  
-    <section>
-        
-    </section>
+    </div>
+  </nav>
 
-    <!--pie de la pagina con info de contacto-->
-    <footer>
-        <!--informacion-->
-        <div></div>
-       <!--patrocinadores--> 
-        <div>
-            <img src="https://www.ordunaturismo.com/style/img/euskara_white.svg">
-            <img src="https://www.ordunaturismo.com/style/img/basque-tour_white.svg">
-            <img src="https://www.ordunaturismo.com/style/img/bizkaia_white.svg">
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../img/index/paisaje.jpg" height="600px" alt="First slide" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Paisaje Orduña</h5>
+          <p>
+            Un paisaje de orduña capturado por Jose Juan fotógrafo Orduñense
+          </p>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/index/paisaje2.png" height="600px" alt="Second slide" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Paisaje2</h5>
+          <p>Jose Juan se la sacó</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/index/virgenOrduña.png" height="600px" alt="Second slide" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Virgen Orduña</h5>
+          <p>Un monumento del siglo XX que recoge tanto la tradición de la patrona de la localidad, como las corrientes
+            artísticas de la época.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+
+  </div>
+
+  <div class="container w-100 mt-5 mb-5 text-center">
+    <h2 class="m-5">¿Que puedes hacer en Orduña?</h2>
+
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6">
+        <h3>Gastronomía</h3>
+        <p>Este es el contenido de la primera columna.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="../img/orduna-header.svg" alt="">
+        <p class="card-img-bottom">Plato típico de Orduña</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Columna 1</h3>
+        <p>Este es el contenido de la primera columna.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Columna 2</h3>
+        <p>Este es el contenido de la segunda columna.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Columna 1</h3>
+        <p>Este es el contenido de la primera columna.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Columna 2</h3>
+        <p>Este es el contenido de la segunda columna.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--pie de la pagina con info de contacto-->
+  <footer class="bg-dark p-3">
+    <div class="d-flex justify-content-around">
+      <img src="https://www.ordunaturismo.com/style/img/euskara_white.svg" />
+      <img src="https://www.ordunaturismo.com/style/img/orduna_white.svg" />
+      <img src="https://www.ordunaturismo.com/style/img/basque-tour_white.svg" />
+      <img src="https://www.ordunaturismo.com/style/img/bizkaia_white.svg" />
+      <img src="https://www.ordunaturismo.com/style/img/euskadi_white.svg" />
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../js/index.js"></script>
 </body>
+
 </html>
