@@ -1,0 +1,55 @@
+#menu{  
+    background-image: url("/img/actividades/orduña-running.jpg");
+    width: 100%;
+    text-align: center;
+    height: 500px;
+    margin-bottom: 1%;
+    
+}
+
+
+#menu_bar {
+    width: 70%;
+    text-align: center;
+    padding: 10px 20px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.txt{
+    font-weight: 300;
+    color: #ffffff;
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+}
+
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    width: 60%;
+}
+#card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: white;
+}
+
+#card h3 {
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+
+    }
+
+}
