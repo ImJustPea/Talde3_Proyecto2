@@ -43,14 +43,12 @@
   </nav>
 
 
-  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+  <div id="carousel1" class="carousel slide carousel-fade carouselImg" data-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
 
     <div class="carousel-inner">
@@ -82,10 +80,10 @@
 
     </div>
 
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </a>
 
@@ -110,19 +108,60 @@
     </div>
   </section>
 
+  <div class="divLinea">
+    <div class="linea-horizontal"></div>
+  </div>
+
   <section class="container w-100 mt-5 mb-5 text-center">
     <h2>¿Como llegar?</h2>
 
     <div class="d-flex justify-content-center">
-      <div class="w-50 m-3">
+      <div class="m-3" style="max-width: 660px;">
         <p>Orduña goza de una excelente ubicación como destino turístico, con escasos 40 kilómetros a dos de las
           capitales de Euskadi: Bilbao y Vitoria-Gasteiz.</p>
         <p>Tú eliges cómo quieres venir a visitarnos, existen dos vías principales: por carretera o en tren. Desde la
           oficina de turismo de Orduña te damos toda la información necesaria para que tu llegada sea más fácil.</p>
       </div>
     </div>
-    <div id="cardContainer" class="d-flex justify-content-between">
-      <div id="cards" class="w-25">
+    <div id="cardContainer" class="row d-flex align-items-center">
+
+      <div id="cards" class="col-md-3">
+        <img src="https://www.ordunaturismo.com/style/img/ic-coche.svg" alt="coche">
+        <h3>Por Carretera</h3>
+        <div id="carousel2" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="mb-5">
+                <b>Desde Bilbao: </b>
+                Incorporarse a la A-8, 1 Km.
+                Salida de la A-8 hacia la A-68.
+                Salida 3 hacia Llodio. Incorporarse a la BI-4516, dirección Llodio-Orduña.
+                Incorporación a la BI-625.
+                Tomar la segunda entrada de Orduña (Este).
+                Llegada a Orduña, 36.8 Km.
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <p class="mb-5">
+                <b>Desde Vitoria-Gasteiz: </b>
+                Incorporarse a la N-622, 3,8 Km.
+                Salida de la N-622 hacia la A-68 e incorporarse a la A-2521, dirección Orduña.
+                Se llega a la entrada de Orduña (Este).
+                Llegada a Orduña, 37.9 Km.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active bg-dark" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2" class="bg-dark"></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="cards" class="col-md-3">
         <img src="https://www.ordunaturismo.com/style/img/ic-tren.svg" alt="tren">
         <h3>En Tren</h3>
         <p>La línea C3 de cercanías de Renfe une Orduña con la estación de Bilbao-Abando. La frecuencia de trenes es
@@ -130,7 +169,7 @@
           <a href="https://www.renfe.com/es/es">Renfe</a>
         </p>
       </div>
-      <div id="cards" class="w-25">
+      <div id="cards" class="col-md-3">
         <img src="https://www.ordunaturismo.com/style/img/ic-bus.svg" alt="bus">
         <h3>En Bus</h3>
         <p>Terminal de autobuses de Bilbao-Termibus, desde Orduña: línea de Renfe cercanías Orduña-Bilbao. El viaje
@@ -138,15 +177,19 @@
           parada de San Mamés.
         </p>
       </div>
-      <div id="cards" class="w-25">
+      <div id="cards" class="col-md-3">
         <img src="https://www.ordunaturismo.com/style/img/ic-avion.svg" alt="avion">
-        <h3>En Avion</h3>
-        <p>La línea C3 de cercanías de Renfe une Orduña con la estación de Bilbao-Abando. La frecuencia de trenes es
-          de 30 minutos, el viaje se realiza en unos 45 minutos. Posibilidad de consulta online del horario de trenes:
-          <a href="https://www.renfe.com/es/es">Renfe</a>
+        <h3>En Avión</h3>
+        <p>Comunicaciones con las principales capitales y puntos de interés
+          Aeropuertos: Loiu (Bizkaia) y Foronda (Álava), ambos a unos 40 Km. de Orduña.
+        </p>
+        <p>
+          Más información: <a href="https://www.aena.es/es/pasajeros/pasajeros.html">Página oficial de AENA</a>
         </p>
       </div>
     </div>
+
+    <img src="../img/index/infografia.svg" alt="infografia" class="w-100" width="500px" height="500px">
   </section>
 
   <!--pie de la pagina con info de contacto-->
