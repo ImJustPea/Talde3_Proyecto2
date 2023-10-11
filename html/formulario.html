@@ -42,7 +42,42 @@
     </div>
   </nav>
 
+  <div class="container">
+    <h2>Formulario de Contacto</h2>
+    <form action="index.html">
 
+        <label for="equipo">¿Tienes equipo?</label>
+        <input type="radio" id="tengoEquipo" name="equipo" value="Tengo equipo" required checked>Tengo equipo
+        <input type="radio" id="noTengoEquipo" name="equipo" value="No tengo equipo" required>No tengo equipo
+        
+        <label for="deporte">¿Que deporte?</label>
+        <input type="radio" id="Baloncesto" name="deporte" value="Baloncesto" required checked>Baloncesto
+        <input type="radio" id="Futbol" name="deporte" value="Futbol" required>Futbol
+        <input type="radio" id="Rubgy" name="deporte" value="Rubgy" required>Rugby
+        <input type="radio" id="Volleyball" name="deporte" value="Volleyball" required>Volleyball
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+
+        <label for="nEquipo">Nombre del Equipo:</label>
+        <input type="text" id="nEquipo" name="nEquipo" placeholder="(Si dispones de uno)">
+
+        <label for="logo">Logo del Equipo (PNG o JPG):</label>
+        <input type="file" id="logo" name="logo" accept=".png, .jpg, .jpeg">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="6" cols="35" placeholder="En caso de que no dispongas de equipo, por favor, indícanos tu deporte de interés y tu posición en el mismo. Con esta información, haremos todo lo posible para encontrar un equipo adecuado. Te contactaremos por correo electrónico."></textarea>
+
+        <div id="campoBotones">
+            <input type="submit" value="Enviar">
+            <a href="index.html"><input type="button" value="Volver"></a>
+        </div>
+    </form>
+</div>
 
 
   <!--pie de la pagina con info de contacto-->
