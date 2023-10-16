@@ -1,3 +1,4 @@
+$('#fotoPreview').hide();
 function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
@@ -12,13 +13,8 @@ function readURL(input) {
 
 $("#foto").change(function () {
     readURL(this);
-});
-
-if ($('#fotoPreview').attr('src') == "#") {
-    $('#fotoPreview').hide();
-} else {
     $('#fotoPreview').show();
-}
+});
 
 var dniInput = document.getElementById("dni");
 
