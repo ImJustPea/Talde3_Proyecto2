@@ -1,3 +1,25 @@
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#fotoPreview').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#foto").change(function () {
+    readURL(this);
+});
+
+if ($('#fotoPreview').attr('src') == "#") {
+    $('#fotoPreview').hide();
+} else {
+    $('#fotoPreview').show();
+}
+
 var dniInput = document.getElementById("dni");
 
 var regexDNI = /^\d{8}[A-Z]$/;
