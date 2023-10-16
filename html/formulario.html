@@ -47,7 +47,7 @@
       <h2>FORMULARIO DE RESERVA</h2>
       <form action="index.html">
 
-        <label for="equipo">RESERVAR VIAJE</label>
+        <label for="equipo">Reservar actividad</label>
         <div class="d-flex justify-content-around">
           <div class="rowRadio">
             <input type="radio" id="surf" name="equipo" value="surf" required> SURF
@@ -71,7 +71,10 @@
           </div>
         </div>
 
-        <label for="date">Elije la fecha para reservar:</label>
+        <label for="cant">¿Cuantas personas tomarán parte?</label>
+        <input type="number" id="cant" name="cant" min="1" max="15" required>
+
+        <label for="date">Elige la fecha para reservar:</label>
         <input type="date" id="date" name="date" required>
 
         <label for="nombre">Nombre:</label>
