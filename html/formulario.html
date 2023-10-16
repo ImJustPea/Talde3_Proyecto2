@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/formulario.css" />
   <link rel="stylesheet" href="../css/comun.css" />
   <link rel="shortcut icon" href="../img/orduna-icon.png" type="image/x-icon" />
   <title>Orduña</title>
@@ -42,43 +42,42 @@
     </div>
   </nav>
 
-  <div class="container">
-    <h2>Formulario de Contacto</h2>
-    <form action="index.html">
+  <div class="d-flex justify-content-center">
+    <div class="container m-5">
+      <h2>FORMULARIO DE RESERVA</h2>
+      <form action="index.html">
 
-        <label for="equipo">¿Tienes equipo?</label>
-        <input type="radio" id="tengoEquipo" name="equipo" value="Tengo equipo" required checked>Tengo equipo
-        <input type="radio" id="noTengoEquipo" name="equipo" value="No tengo equipo" required>No tengo equipo
-        
-        <label for="deporte">¿Que deporte?</label>
-        <input type="radio" id="Baloncesto" name="deporte" value="Baloncesto" required checked>Baloncesto
-        <input type="radio" id="Futbol" name="deporte" value="Futbol" required>Futbol
-        <input type="radio" id="Rubgy" name="deporte" value="Rubgy" required>Rugby
-        <input type="radio" id="Volleyball" name="deporte" value="Volleyball" required>Volleyball
+        <label for="equipo">RESERVAR VIAJE</label>
+        <input type="radio" id="surf" name="equipo" value="surf" required>SURF
+        <input type="radio" id="senderismo" name="equipo" value="senderismo" required>SENDERISMO
+        <input type="radio" id="mercadillo" name="equipo" value="mercadillo" required>MERCADILLO
+        <input type="radio" id="festival" name="equipo" value="festival" required>FESTIVAL
+        <input type="radio" id="visitas" name="equipo" value="visitas" required>VISITAS GUIADAS
+        <input type="radio" id="golf" name="equipo" value="golf" required>GOLF
+        <p>Elije la fecha para reservar</p>
+        <input type="date" required>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required placeholder="11111111A">
 
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required placeholder="xxxxxx@gmail.com">
 
+        <label for="foto">Queremos saber como eres. Inserta foto de tu cara(PNG o JPG):</label>
+        <input type="file" id="foto" name="foto" accept=".png, .jpg, .jpeg">
 
-        <label for="nEquipo">Nombre del Equipo:</label>
-        <input type="text" id="nEquipo" name="nEquipo" placeholder="(Si dispones de uno)">
-
-        <label for="logo">Logo del Equipo (PNG o JPG):</label>
-        <input type="file" id="logo" name="logo" accept=".png, .jpg, .jpeg">
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="6" cols="35" placeholder="En caso de que no dispongas de equipo, por favor, indícanos tu deporte de interés y tu posición en el mismo. Con esta información, haremos todo lo posible para encontrar un equipo adecuado. Te contactaremos por correo electrónico."></textarea>
+        <label for="mensaje">Danos en una frase ideas para mejorar nuestra pagina, gracias:</label>
+        <textarea id="mensaje" name="mensaje" rows="6" cols="35" placeholder="AQUI"></textarea>
 
         <div id="campoBotones">
-            <input type="submit" value="Enviar">
-            <a href="index.html"><input type="button" value="Volver"></a>
+          <input type="submit" value="Enviar">
+          <a href="index.html"><input type="button" value="Volver"></a>
         </div>
-    </form>
-</div>
-
+      </form>
+    </div>
+  </div>
 
   <!--pie de la pagina con info de contacto-->
   <footer class="bg-dark p-3 d-flex justify-content-around flex-wrap">
